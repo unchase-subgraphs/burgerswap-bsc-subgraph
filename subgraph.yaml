@@ -1,4 +1,4 @@
-specVersion: 0.0.4
+specVersion: 0.0.5
 description: BurgerSwap is the first cross-chain aggregator combining rates and prices from the leading DEXs and CEXs; By combining the switch protocol, BurgerSwap, has integrated CEXs, DEXs, and DeFi deals into a single platform, allowing users to access any digital asset or transfer funds between any chains with best prices in one platform.
 repository: https://github.com/unchase-subgraphs/burgerswap-bsc-subgraph
 schema:
@@ -13,7 +13,7 @@ dataSources:
       startBlock: 601292
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Pair
@@ -39,7 +39,7 @@ templates:
       abi: Pair
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       file: ./src/core.ts
       entities:
